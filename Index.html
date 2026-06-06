@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizons Electrical | Nos Produits</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="bg-glow"></div>
+    <header>
+        <a href="index.html" class="logo">HORIZONS ELECTRICAL</a>
+        <nav class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="produits.html">Matériels</a>
+            <a href="panier.html">🛒 Panier (<span id="panier-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2 style="border-left: 4px solid var(--solar-gold); padding-left: 15px;">Équipements Disponibles</h2>
+        <div class="grid">
+            
+            <!-- Produit 1 -->
+            <div class="card">
+                <span class="badge">Solaire</span>
+                <h3 style="margin-top:15px;">Panneau Solaire Monocristallin</h3>
+                <p style="color: var(--text-muted); margin: 10px 0;">Haute performance pour système autonome résidentiel.</p>
+                <p style="color: var(--solar-gold); font-weight: bold; font-size: 1.2rem;">P.U : À la demande</p>
+                <button class="btn btn-solar" onclick="ajouterAuPanier('p1', 'Panneau Solaire Mono', 'Sur Devis')">Ajouter au Panier</button>
+            </div>
+
+            <!-- Produit 2 -->
+            <div class="card">
+                <span class="badge">Stockage</span>
+                <h3 style="margin-top:15px;">Batterie Solaire Gel / Lithium</h3>
+                <p style="color: var(--text-muted); margin: 10px 0;">Cycle profond pour une excellente durabilité énergétique.</p>
+                <p style="color: var(--solar-gold); font-weight: bold; font-size: 1.2rem;">P.U : À la demande</p>
+                <button class="btn btn-solar" onclick="ajouterAuPanier('p2', 'Batterie Solaire', 'Sur Devis')">Ajouter au Panier</button>
+            </div>
+
+            <!-- Produit 3 -->
+            <div class="card">
+                <span class="badge">Contrôle</span>
+                <h3 style="margin-top:15px;">Onduleur / Convertisseur Pur Sinus</h3>
+                <p style="color: var(--text-muted); margin: 10px 0;">Gestion intelligente de la charge et protection intégrée.</p>
+                <p style="color: var(--solar-gold); font-weight: bold; font-size: 1.2rem;">P.U : À la demande</p>
+                <button class="btn btn-solar" onclick="ajouterAuPanier('p3', 'Onduleur Convertisseur', 'Sur Devis')">Ajouter au Panier</button>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
